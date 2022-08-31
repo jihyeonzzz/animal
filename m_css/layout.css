@@ -1,0 +1,10 @@
+@charset "uyf-8";
+
+header{
+    height: 70px;
+}
+
+footer{
+    height: 210px;
+    background-color: #cccccc;
+}

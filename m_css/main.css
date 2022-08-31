@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+main{}
+main .slide{
+    height: 60vh; /*vertical height*/
+    overflow: hidden;
+    position: relative;
+}
+main .slide > h2{display: none;}
+.swiper-slide{
+    position: relative;
+}
+.swiper-slide > h2{
+    position: absolute;
+    color:#ffffff;
+    background: rgba(0, 0, 0, .8);
+    font-size: 20px;
+    font-weight: 500;
+    width: 230px;
+    text-align: center;
+    padding: 6px 10px;
+    line-height: 30px;
+    left: 50%; top:26%;
+    transform: translate(-50%, -50%);
+    border-radius: 40px;
+}
+
+.con h2{display: none;}
+.con nav{
+    width: 98%;
+    margin: 20px auto;
+}
+.con nav > ul{
+    text-align: center;
+}
+.con nav > ul > li{
+    border: 1px solid #cccccc;
+    width: 30%;
+    display: inline-block;
+    margin: 0px 2px 6px 2px;
+}
+.icon{display: inline-block;}
+.mnu{
+    display: block;
+    padding: 8px 0px;
+    font-size: 1rem; /*1rem = 16px*/
+    font-weight: 500;
+}
+.con nav > ul > li .icon{
+    width: 87px; height: 66px;
+    background-image: url('../images/nav_icon.png');
+    background-size: 360px;
+}
+.con nav > ul > li:nth-child(2) .icon{
+    background-position: -82px 0px;
+}
+.con nav > ul > li:nth-child(3) .icon{
+    background-position: -163px 0px;
+}
+.con nav > ul > li:nth-child(4) .icon{
+    background-position: -254px 0px;
+}
+.con nav > ul > li:nth-child(5) .icon{
+    background-position: 8px -66px;
+}
+.con nav > ul > li:last-child .icon{
+    background-position: -66px -66px;
+}
+
+.map_btn{
+    border: 1px solid #cccccc;
+    width: 93.5%;
+    line-height: 60px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(95, 95, 95);
+    display: block;
+    margin: 0px auto;
+}
+.map_btn > .icon{
+    width: 40px; height: 34px;
+    background-image: url('../images/nav_icon.png');
+    display: inline-block;
+    background-size: 360px;
+    background-position: -168px -64px;
+    transform: translateY(10px)
+}
+
+.info{
+    width: 96%; height: 70px;
+    background-image: url('../images/info_back.png');
+    background-size: 100%;
+    color: #ffffff;
+    margin: 20px auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+.info h2{display: none;}
+span.fa-phone{
+    font-size: 24px;
+    padding-right:40PX;
+    display: inline-block;
+    transform: translateY(-10px);
+}
+.tel{
+    padding-top: 16px;
+    line-height: 20px;
+    display: inline-block;
+}
+.tel a{
+    color:#ffffff;
+    font-size: 16px;
+}

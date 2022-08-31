@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+/* 글자모양, 크기, 색상 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+    color: #333333;
+}
+
+a{
+    text-decoration: none;
+    color: #333333;
+}
+
+.h_inner{background-color: #4e4d5f;}
+.h_top{
+    width: 1020px;
+    height: 30px;
+    margin: 0px auto;
+}
+
+.sns{
+    width: 760px;
+    float: left;
+    text-align: right;
+}
+header > .lnb{
+    width: 260px;
+    float: right;
+}
+header .lnb > ul{
+    display: flex;
+    justify-content: space-around;
+    background-color: #525d9f;
+}
+header .lnb a{
+    color: #ffffff;
+    line-height: 30px;
+}
+.h_top > .lnb > ul > li::after{
+    content: "·";
+    color: #ffffff;
+    padding-left: 22px;
+}
+.h_top > .lnb > ul > li:last-child::after{
+    display: none;
+}
+
+.h_bottom{
+    width: 1020px;
+    height: 80px;
+    margin: 0px auto;
+}
+#wrap{
+    width: 1020px;
+    height: 30px;
+    overflow: hidden;
+    background-color: #ffffff;
+    transition: 0.5s;
+    position: absolute;
+    margin: 0px auto;
+    top: 100px;
+}
+#wrap:hover{
+    height: 200px;
+}
+
+.gnb{
+    width: 1020px;
+    position: relative;
+}
+.gnb > ul{
+    display: flex;
+    justify-content: end;
+}
+.gnb > ul > li{
+    position: relative;
+}
+.gnb > ul >li >a{
+    margin: 0px 5px;
+    padding: 0px 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.gnb > ul > li > a:hover{
+    color: #525d9f;
+}
+.gnb > ul > li:last-child > a:hover{
+    color: #10a010;
+}
+
+.sub{
+    position: absolute;
+    width: 100%;
+    padding: 20px 0px 0px 28px;
+}
+.sub > li{
+    line-height: 25px;
+}
+.sub > ul > li > a{}
+.sub > li > a:hover{
+    color: #525d9f;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/* 푸터서식 */
+.f_inner{
+    width: 1020px;
+    margin: 0px auto;
+    position: relative;
+}
+
+.f_inner > h2{
+    position: absolute;
+    right: 0px;
+}
+
+.f_inner .lnb{}
+.f_inner .lnb > ul{}
+.f_inner .lnb > ul > li{
+    display: inline;
+}
+.f_inner .lnb > ul a{
+    line-height: 40px;
+    padding: 0px 10px;
+    color: #333333;
+}
+.f_inner .lnb > ul a:hover{
+    text-decoration: underline;
+}
+.f_inner address{
+    padding-top: 20px;
+}
